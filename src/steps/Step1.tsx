@@ -5,7 +5,6 @@ import {
   Info, Smartphone, Globe, Lock, Zap, Users, Clock
 } from 'lucide-react';
 import type { OnboardingFormData } from '../types';
-import ProgressSidebar from '../components/ProgressSidebar';
 
 interface Step1Props {
   formData: OnboardingFormData;
@@ -53,7 +52,6 @@ export default function Step1({ formData, updateFormData, onNext }: Step1Props) 
   };
 
   const generateNewId = () => {
-    const id = 'EMP' + Math.floor(100000 + Math.random() * 900000);
     setEmployeeId('EMP266181'); // Keep default as per requirement
   };
 

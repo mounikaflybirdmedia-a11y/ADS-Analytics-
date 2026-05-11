@@ -68,7 +68,6 @@ export default function Step4({ formData, onNext, onBack, goToStep }: Step4Props
     return `XXXX XXXX ${digits.slice(-4)}`;
   };
 
-  const hasDoc = (file: File | null | undefined) => file != null;
 
   return (
     <div className="flex gap-8">

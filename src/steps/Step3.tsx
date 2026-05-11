@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import {
-  FileText, Upload, Shield, Info, ArrowLeft, ArrowRight,
-  Check, X, Lock, Zap, Users, Clock
+  FileText, Upload, Info, ArrowLeft, ArrowRight,
+  Check, X, Lock, Users
 } from 'lucide-react';
 import type { OnboardingFormData } from '../types';
 import ProgressSidebar from '../components/ProgressSidebar';
@@ -24,11 +24,7 @@ interface UploadDoc {
   iconBg: string;
 }
 
-const ColoredIcon = ({ color, children }: { color: string; children: React.ReactNode }) => (
-  <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${color}`}>
-    {children}
-  </div>
-);
+
 
 export default function Step3({ formData, updateFormData, onNext, onBack }: Step3Props) {
   const panRef = useRef<HTMLInputElement>(null);

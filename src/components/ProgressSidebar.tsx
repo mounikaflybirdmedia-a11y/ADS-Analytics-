@@ -82,7 +82,6 @@ export default function ProgressSidebar({ currentStep, progress }: ProgressSideb
           {steps.map((step) => {
             const isCompleted = step.num < currentStep;
             const isActive = step.num === currentStep;
-            const isPending = step.num > currentStep;
 
             return (
               <div

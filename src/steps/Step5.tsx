@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {
   CreditCard, Shield, ArrowLeft, Lock, Check, Info,
   Mail, MessageCircle, Smartphone, Building, Wallet,
-  FileText, Upload, User, Briefcase
+  FileText, User, Briefcase
 } from 'lucide-react';
 import type { OnboardingFormData } from '../types';
 
